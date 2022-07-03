@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang='en'>
+<head>
+<title>Quiz</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<link href='../css/style.css' media='screen' rel='stylesheet' type='text/css'>
+<script type='text/javascript'>
+  function popupCode(url) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+  
+  function toggleCode(id) {
+    var code = document.getElementById(id)
+  
+    code.style.display = code.style.display != 'block' ? 'block' : 'none'
+    return true
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln('<' + 'style type="text/css">.method .source pre { display: none }<\/style>')
+</script>
+</head>
+<body class='page'>
+<div class='class' id='wrapper'>
+<div class='header'>
+<h1 class='name'><span class='type'>class</span>
+Quiz
+</h1>
+<ol class='paths'>
+<li>
+<a href="../files/src/models/quiz_rb.html">src/models/quiz.rb</a>
+</li>
+</ol>
+<div class='parent'>
+Superclass:
+<strong><a href="Object.html">Object</a></strong>
+</div>
+</div>
+<div id='content'>
+<div id='text'>
+<div id='description'>
+<p>This <code>Quiz</code> class models a test comprised of “n” questions</p>
+</div>
+<div id='method-list'>
+<h2>Methods</h2>
+<h3>Public Instance</h3>
+<ol>
+<li><a href="#method-i-get_questions">get_questions</a></li>
+<li><a href="#method-i-handle_bad_method">handle_bad_method</a></li>
+<li><a href="#method-i-handle_bad_request">handle_bad_request</a></li>
+<li><a href="#method-i-handle_get">handle_get</a></li>
+<li><a href="#method-i-handle_post">handle_post</a></li>
+<li><a href="#method-i-lambda_handler">lambda_handler</a></li>
+<li><a href="#method-i-make_response">make_response</a></li>
+</ol>
+</div>
+<div id='context'>
+</div>
+<div id='section'>
+<div id='methods'>
+<h2>Public Instance methods</h2>
+<div class='method public-instance' id='method-method-i-get_questions'>
+<a name='method-i-get_questions'></a>
+<div class='synopsis'>
+<span class='name'>get_questions</span><span class='arguments'>(question_qty)</span>
+
+</div>
+<div class='description'>
+
+<p>This method gets a sample of “n” entries or questions from the questions.json file </p>
+
+<pre>Parameters::
+question_qty:: number of questions that will comprise the quiz
+Returns:: Quiz comprised of &quot;n&quot; random questions pulled from question.json</pre>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-get_questions-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-get_questions-source'><span class="ruby-comment"># File src/models/quiz.rb, line 45</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_questions</span>(<span class="ruby-identifier">question_qty</span>)
+    <span class="ruby-keyword">begin</span>
+        <span class="ruby-identifier">file_json</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-string">&#39;models/questions.json&#39;</span>)
+    <span class="ruby-keyword">rescue</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;error reading file&quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">begin</span>
+        <span class="ruby-identifier">quiz_json</span> = <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">file_json</span>)
+    <span class="ruby-keyword">rescue</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;error parsing json&quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">begin</span>
+        <span class="ruby-identifier">quiz_array</span> = <span class="ruby-identifier">quiz_json</span>[<span class="ruby-string">&quot;Quiz&quot;</span>] 
+        <span class="ruby-identifier">quiz_array</span>.<span class="ruby-identifier">sample</span>(<span class="ruby-identifier">question_qty</span>)
+    <span class="ruby-keyword">rescue</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;error sampling quiz&quot;</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-handle_bad_method'>
+<a name='method-i-handle_bad_method'></a>
+<div class='synopsis'>
+<span class='name'>handle_bad_method</span><span class='arguments'>(method)</span>
+
+</div>
+<div class='description'>
+
+<p>This method handles method not allowed requests by calling the <a href="Quiz.html#method-i-make_response"><code>make_response</code></a> method</p>
+
+<pre class="ruby"><span class="ruby-constant">Returns</span><span class="ruby-operator">::</span> <span class="ruby-constant">Bad</span> <span class="ruby-identifier">method</span> <span class="ruby-identifier">response</span> <span class="ruby-identifier">given</span> <span class="ruby-identifier">a</span> <span class="ruby-constant">Http</span> <span class="ruby-identifier">status</span> <span class="ruby-identifier">code</span>
+</pre>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-handle_bad_method-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-handle_bad_method-source'><span class="ruby-comment"># File src/models/quiz.rb, line 90</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">handle_bad_method</span>(<span class="ruby-identifier">method</span>)
+  <span class="ruby-identifier">make_response</span>(<span class="ruby-constant">HttpStatus</span><span class="ruby-operator">::</span><span class="ruby-constant">METHOD_NOT_ALLOWED</span>,
+    {<span class="ruby-value">message:</span> <span class="ruby-node">&quot;Method not supported: #{method}&quot;</span>})
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-handle_bad_request'>
+<a name='method-i-handle_bad_request'></a>
+<div class='synopsis'>
+<span class='name'>handle_bad_request</span><span class='arguments'>()</span>
+
+</div>
+<div class='description'>
+
+<p>This method handles bad requests by calling the <a href="Quiz.html#method-i-make_response"><code>make_response</code></a> method</p>
+
+<pre class="ruby"><span class="ruby-constant">Returns</span><span class="ruby-operator">::</span> <span class="ruby-constant">Bad</span> <span class="ruby-identifier">request</span> <span class="ruby-identifier">response</span> <span class="ruby-identifier">given</span> <span class="ruby-identifier">a</span> <span class="ruby-constant">Http</span> <span class="ruby-identifier">status</span> <span class="ruby-identifier">code</span>
+</pre>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-handle_bad_request-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-handle_bad_request-source'><span class="ruby-comment"># File src/models/quiz.rb, line 82</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">handle_bad_request</span>
+  <span class="ruby-identifier">make_response</span>(<span class="ruby-constant">HttpStatus</span><span class="ruby-operator">::</span><span class="ruby-constant">BAD_REQUEST</span>,
+    {<span class="ruby-value">message:</span> <span class="ruby-string">&#39;Bad request (invalid input)&#39;</span>})
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-handle_get'>
+<a name='method-i-handle_get'></a>
+<div class='synopsis'>
+<span class='name'>handle_get</span><span class='arguments'>()</span>
+
+</div>
+<div class='description'>
+
+<p>This method handles get requests by calling the <a href="Quiz.html#method-i-make_response"><code>make_response</code></a> method</p>
+
+<pre>Returns:: Get response given a Http status code, and quiz</pre>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-handle_get-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-handle_get-source'><span class="ruby-comment"># File src/models/quiz.rb, line 67</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">handle_get</span>
+  <span class="ruby-identifier">make_response</span>(<span class="ruby-constant">HttpStatus</span><span class="ruby-operator">::</span><span class="ruby-constant">OK</span>, <span class="ruby-identifier">get_questions</span>(<span class="ruby-identifier">question_qty</span>))
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-handle_post'>
+<a name='method-i-handle_post'></a>
+<div class='synopsis'>
+<span class='name'>handle_post</span><span class='arguments'>()</span>
+
+</div>
+<div class='description'>
+
+<p>This method handles post requests by calling the <a href="Quiz.html#method-i-make_response"><code>make_response</code></a> method</p>
+
+<pre class="ruby"><span class="ruby-constant">Returns</span><span class="ruby-operator">::</span> <span class="ruby-constant">Post</span> <span class="ruby-identifier">response</span> <span class="ruby-identifier">given</span> <span class="ruby-identifier">a</span> <span class="ruby-constant">Http</span> <span class="ruby-identifier">status</span> <span class="ruby-identifier">code</span>
+</pre>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-handle_post-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-handle_post-source'><span class="ruby-comment"># File src/models/quiz.rb, line 74</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">handle_post</span>
+  <span class="ruby-identifier">make_response</span>(<span class="ruby-constant">HttpStatus</span><span class="ruby-operator">::</span><span class="ruby-constant">CREATED</span>,
+    {<span class="ruby-value">message:</span> <span class="ruby-string">&#39;Resource created or updated&#39;</span>})
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-lambda_handler'>
+<a name='method-i-lambda_handler'></a>
+<div class='synopsis'>
+<span class='name'>lambda_handler</span><span class='arguments'>(event:, context:)</span>
+
+</div>
+<div class='description'>
+
+<p>This method handles lambda requests by calling each event handler depending on the event and context received</p>
+
+<pre class="ruby"><span class="ruby-constant">Parameters</span><span class="ruby-operator">::</span>
+<span class="ruby-identifier">event</span><span class="ruby-operator">::</span> <span class="ruby-constant">Http</span> <span class="ruby-identifier">event</span> 
+
+<span class="ruby-constant">Returns</span><span class="ruby-operator">::</span> <span class="ruby-constant">Handles</span> <span class="ruby-identifier">event</span> <span class="ruby-identifier">depending</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">event</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">context</span> <span class="ruby-identifier">received</span>
+</pre>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-lambda_handler-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-lambda_handler-source'><span class="ruby-comment"># File src/models/quiz.rb, line 101</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">lambda_handler</span>(<span class="ruby-value">event:</span>, <span class="ruby-value">context:</span>)
+  <span class="ruby-identifier">method</span> = <span class="ruby-identifier">event</span>[<span class="ruby-string">&#39;httpMethod&#39;</span>]
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">method</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&#39;GET&#39;</span>
+    <span class="ruby-identifier">handle_get</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">handle_bad_method</span>(<span class="ruby-identifier">method</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+<div class='method public-instance' id='method-method-i-make_response'>
+<a name='method-i-make_response'></a>
+<div class='synopsis'>
+<span class='name'>make_response</span><span class='arguments'>(code, body)</span>
+
+</div>
+<div class='description'>
+
+<p>This method creates a response based on the <a href="HttpStatus.html"><code>HttpStatus</code></a> code received</p>
+
+<pre class="ruby"><span class="ruby-constant">Parameters</span><span class="ruby-operator">::</span>
+<span class="ruby-identifier">code</span><span class="ruby-operator">::</span> <span class="ruby-constant">The</span> <span class="ruby-identifier">http</span> <span class="ruby-identifier">status</span> <span class="ruby-identifier">code</span>
+<span class="ruby-identifier">body</span><span class="ruby-operator">::</span> <span class="ruby-constant">JSON</span> <span class="ruby-identifier">body</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">response</span>
+</pre>
+
+</div>
+<div class='source'>
+<a class='source-toggle' href='#' onclick='toggleCode(&#39;method-i-make_response-source&#39;); return false'>
+[show source]
+</a>
+<pre id='method-i-make_response-source'><span class="ruby-comment"># File src/models/quiz.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">make_response</span>(<span class="ruby-identifier">code</span>, <span class="ruby-identifier">body</span>)
+  {
+    <span class="ruby-value">statusCode:</span> <span class="ruby-identifier">code</span>,
+    <span class="ruby-value">headers:</span> {
+      <span class="ruby-string">&quot;Content-Type&quot;</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;application/json; charset=utf-8&quot;</span>
+    },
+    <span class="ruby-value">body:</span> <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">generate</span>(<span class="ruby-identifier">body</span>)
+  }
+<span class="ruby-keyword">end</span></pre>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id='footer-push'></div>
+</div>
+<div id='footer'>
+<a href="https://github.com/jeremyevans/hanna-nouveau"><strong>Hanna Nouveau</strong> RDoc template</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/*
+Final Project: Quiz Application with Microservices
+Date: 10-Jun-2022
+Author:  
+        A01377718 Javier Alexandro Vargas Sanchez
+*/
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+h1, h4{
+    text-align: left;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 5.4em;
+}
+
+.container{
+    margin: auto;
+    text-align: center;
+}
+
+.prompt{
+  text-align: left;
+}
+
+.inputs{
+    margin-top: 5em;
+}
+
+.submitButton{
+    background-color: #0F0E0E;
+    border: 1px solid black;
+    color: white;
+}
+.submitButton:hover{
+    background-color: #EBEBEA;
+    border: 1px solid black;
+    color: white;
+}
+
+#questionButton{
+    width: 100%;
+    height: 100%;
+}
+
+.correctAnswer, .answerSelected{
+    font-size: 2em;
+}
+
+.formThingy{
+    margin-top: 4em;
+}

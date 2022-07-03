@@ -1,0 +1,27 @@
+= Domain-Specific Language Pattern
+
+This documentation was developed as part of a programming activity for the <em>Software Design and Architecture</em> course (_Tc3049_), at the Tecnológico de Monterrey, Campus Estado de México.
+
+== Authors
+
+* *A01376364* <em>Alex Serrano Durán</em>
+* *A01377718* <em>Javier Alexandro Vargas Sánchez</em>
+
+== Overview
+
+The <b>Domain-Specific Language Pattern</b> is a design pattern that uses a convenient syntax for a specefic domain in order to express the problem easily. This design pattern is ideal for use cases in which the user is not tech savvy and needs to use a computer to solve a problem.  
+The UML diagram for this programming activity is as follows:
+
+rdoc-image:img/domain_uml.png
+
+To test the program, inside the +src+ folder type the following instruction at the command line:
+
+    ruby -I . -w jankenpon_test.rb
+
+== References
+
+- \R. Olsen. <em>Design Patterns in Ruby.</em> Addison-Wesley, 2007.
+
+- Ruby-Doc.org. <em>RDoc Markup Reference.</em> {\http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html}[http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html].
+
+- StackOverflow. <em> Ruby "Undefined Method" for class method </em> {https://stackoverflow.com/questions/35965231/ruby-undefined-method-for-class-method} Accessed April 28, 2022.

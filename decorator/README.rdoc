@@ -1,0 +1,25 @@
+= Decorator Pattern
+
+This documentation was developed as part of a programming activity for the <em>Software Design and Architecture</em> course (_Tc3049_), at the Tecnológico de Monterrey, Campus Estado de México.
+
+== Authors
+
+* *A01376364* <em>Alex Serrano Durán</em>
+* *A01377718* <em>Javier Alexandro Vargas Sánchez</em>
+
+== Overview
+
+The <b>Decorator Pattern</b> is a design pattern that dynamically assigns additional actions or responsibilities to an existing object, instead of subclassing to extend functionality  
+The UML diagram for this programming activity is as follows:
+
+rdoc-image:img/decorator_uml.png
+
+To test the program, inside the +src+ folder type the following instruction at the command line:
+
+    ruby -I . -w decorator_test.rb
+
+== References
+
+- \R. Olsen. <em>Design Patterns in Ruby.</em> Addison-Wesley, 2007.
+
+- Ruby-Doc.org. <em>RDoc Markup Reference.</em> {\http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html}[http://ruby-doc.org/stdlib-2.4.1/libdoc/rdoc/rdoc/RDoc/Markup.html] Accessed April 21, 2022.

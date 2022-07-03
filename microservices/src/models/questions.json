@@ -1,0 +1,1420 @@
+{
+    "Quiz":[
+        {
+            "question" : "How many patterns were proposed by the GoF?",
+            "answers" : [
+                {
+                    "answer": "16",
+                    "correct": false
+                }, 
+                {
+                    "answer": "23",
+                    "correct": true
+                },
+                {
+                    "answer": "19",
+                    "correct": false
+                },
+                {
+                    "answer": "22",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which of the following is not a principle of patterns described in the book?",
+            "answers" : [
+                {
+                    "answer": "Prefer composition over inheritance.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Delegate, delegate, delegate.",
+                    "correct": false
+                },
+                {
+                    "answer": "Separate out the things that change from those that stay the same.",
+                    "correct": false
+                },
+                {
+                    "answer": "Program to an implementation, not an interface.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "What does program to an interface and not from an implementation means?",
+            "answers" : [
+                {
+                    "answer": "Write code that is less tightly coupled to itself, program to the most general type you can.",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Write a code that is more tightly couple to itself, program to the less general type you can.",
+                    "correct": false
+                },
+                {
+                    "answer": "Write a code that is more tightly couple to itself, program to the most general type you can.",
+                    "correct": false
+                },
+                {
+                    "answer": "Write a code that is less tightly couple to itself, program to the less general type you can.",
+                    "correct": false
+                }
+            ]
+        }, 
+        {
+            "question" : "Which combination is a flexible alternative to inheritance?",
+            "answers" : [
+                {
+                    "answer": "implementation + encapsulation ",
+                    "correct": false
+                }, 
+                {
+                    "answer": "composition + implementation",
+                    "correct": false
+                },
+                {
+                    "answer": "composition + delegation",
+                    "correct": true
+                },
+                {
+                    "answer": "implementation + composition",
+                    "correct": false
+                }
+            ]
+        }, 
+        {
+            "question" : "What does YAGNI stands for?",
+            "answers" : [
+                {
+                    "answer": "You Are Gonna Need It",
+                    "correct": false
+                }, 
+                {
+                    "answer": " You Ain't Gonna Need It",
+                    "correct": true
+                },
+                {
+                    "answer": "You Also Gonna Need It",
+                    "correct": false
+                },
+            ]
+        },
+        {
+            "question" : "In Ruby what does zero evaluates in a Boolean expression?",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": true
+                }, 
+                {
+                    "answer": "False",
+                    "correct": false
+                },
+                {
+                    "answer": "Nil",
+                    "correct": false
+                },
+                {
+                    "answer": "NaN",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which statement do you use if you have more than one condition? ",
+            "answers" : [
+                {
+                    "answer": "elseif",
+                    "correct": false
+                }, 
+                {
+                    "answer": "else",
+                    "correct": false
+                },
+                {
+                    "answer": "elif",
+                    "correct": false
+                },
+                {
+                    "answer": "elsif",
+                    "correct": true
+                }
+            ]
+        }, 
+        {
+            "question" : "In Ruby which datatype is inmutable?",
+            "answers" : [
+                {
+                    "answer": "int",
+                    "correct": false
+                }, 
+                {
+                    "answer": "string",
+                    "correct": true
+                },
+                {
+                    "answer": "enum",
+                    "correct": false
+                },
+                {
+                    "answer": "array",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "What do we do when we need to represent something that is less about data and more like an internal identifier in our program?",
+            "answers" : [
+                {
+                    "answer": "symbol",
+                    "correct": true
+                }, 
+                {
+                    "answer": "operator",
+                    "correct": false
+                },
+                {
+                    "answer": "expression",
+                    "correct": false
+                },
+                {
+                    "answer": "shortcut",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which is the convenient way to append a new element to the end of an array?",
+            "answers" : [
+                {
+                    "answer": ",",
+                    "correct": false
+                }, 
+                {
+                    "answer": "/",
+                    "correct": false
+                },
+                {
+                    "answer": "_",
+                    "correct": false
+                },
+                {
+                    "answer": "<<",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "Which is the final built-in Ruby type that either does or does not match any given string?",
+            "answers" : [
+                {
+                    "answer": "Arrays",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Symbols",
+                    "correct": false
+                },
+                {
+                    "answer": "Regular Expression",
+                    "correct": true
+                },
+                {
+                    "answer": "Hashes",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "What does mixins stands for?",
+            "answers" : [
+                {
+                    "answer": "Modules that live to be move for to classes",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Modules that live to be mixed in to classes",
+                    "correct": true
+                },
+                {
+                    "answer": "Modules that don't live to be mixed in to classes",
+                    "correct": false
+                },
+                {
+                    "answer": "Modules that don't live to be move for to classes",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which is a great way to introduce hard-to-find bugs into your programs and that is thread safe?",
+            "answers" : [
+                {
+                    "answer": "Use the monitor class",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Use the visualizer class",
+                    "correct": false
+                },
+                {
+                    "answer": "Use the reviewer class",
+                    "correct": false
+                },
+                {
+                    "answer": "Use the observer class",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "What is RubyGems?",
+            "answers" : [
+                {
+                    "answer": "Is a software packaging system that lets coders release Ruby libraries and applications in convenient, easy-to-install bundles.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Is a software packaging system that lets coders release Ruby only libraries in convenient, easy-to-install bundles.",
+                    "correct": false
+                },
+                {
+                    "answer": "Is a software packaging system that lets coders release Ruby only applications in convenient, easy-to-install bundles.",
+                    "correct": false
+                },
+                {
+                    "answer":  "Is a software packaging system that lets coders modify Ruby libraries and applications in convenient, easy-to-install bundles.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "In which pattern do you need to build an abstract base class with a skeletal method?",
+            "answers" : [
+                {
+                    "answer": "The Template Method",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Bridge",
+                    "correct": false
+                },
+                {
+                    "answer": "Facade",
+                    "correct": false
+                },
+                {
+                    "answer": "Proxy",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The following allows the concrete class to choose (1) to override the base implementation and do sth different or (2) to simply accept the default implementation?",
+            "answers" : [
+                {
+                    "answer": "The Class Method",
+                    "correct": false
+                }, 
+                {
+                    "answer": "The Factory Method",
+                    "correct": false
+                },
+                {
+                    "answer": "The Template Method",
+                    "correct": false
+                },
+                {
+                    "answer": "The Hook Method",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "What does it mean that Ruby is dynamically typed?",
+            "answers" : [
+                {
+                    "answer": "That the language does not check to make sure that the objects being passed have any particular class ancestor",
+                    "correct": true
+                }, 
+                {
+                    "answer": "That the language does not check to make sure that the methods being passed have any particular class ancestor",
+                    "correct": false
+                },
+                {
+                    "answer": "That the language does not check to make sure that the methods being passed have any particular class ancestor",
+                    "correct": false
+                },
+                {
+                    "answer": "That the language does check to make sure that the objects being passed have any particular class ancestor",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "What is the cost of static typing",
+            "answers" : [
+                {
+                    "answer": "Couple your system together much more tigthly than necessary",
+                    "correct": true
+                }, 
+                {
+                    "answer": "It lacks of composition and logic",
+                    "correct": false
+                },
+                {
+                    "answer": "Makes the code ambiguos",
+                    "correct": false
+                },
+                {
+                    "answer": "Makes the components less available to be mixed ",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "How do we get the information that the context has but the strategy needs in the stratey method?",
+            "answers" : [
+                {
+                    "answer": "Pass everything that the strategy needs as arguments when the context calls the methods on the strategy object.",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Pass everything that the strategy needs as condittionals when the context calls the methods on the strategy object.",
+                    "correct": false
+                },
+                {
+                    "answer": "Pass everything that the strategy needs as condittionals after the context calls the methods on the strategy object.",
+                    "correct": false
+                },
+                {
+                    "answer": "Pass everything that the strategy needs as arguments after the context calls the methods on the strategy object.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which is the Ruby's duck typing filosofy?",
+            "answers" : [
+                {
+                    "answer": "Make compositions that help to tight the code.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "To make the codes more legible and pretty.",
+                    "correct": false
+                },
+                {
+                    "answer": "Is to have the language help you whenever possible but to otherwise stay out of the way.",
+                    "correct": true
+                },
+                {
+                    "answer": "Mix the code elements in order to create new patterns.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "In Ruby, a proc is an objects that holds a chunk of code?",
+            "answers" : [
+                {
+                    "answer": "False",
+                    "correct": false
+                }, 
+                {
+                    "answer": "True",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "Which character do you need to use when defining parameters for your proc objects",
+            "answers" : [
+                {
+                    "answer": "[]",
+                    "correct": false
+                }, 
+                {
+                    "answer": "()",
+                    "correct": false
+                },
+                {
+                    "answer": "|",
+                    "correct": true
+                },
+                {
+                    "answer": "<< >>",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : " How does the yield keyword help us?",
+            "answers" : [
+                {
+                    "answer": "Lets a module execute a code block",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Lets a parameter execute a code block",
+                    "correct": false
+                },
+                {
+                    "answer": "Lets a class execute a code block",
+                    "correct": false
+                },
+                {
+                    "answer": "Lets a method execute a code block",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "With which statement can you catch exceptions?",
+            "answers" : [
+                {
+                    "answer": "recover",
+                    "correct": false
+                }, 
+                {
+                    "answer": "filter",
+                    "correct": false
+                },
+                {
+                    "answer": "begin / rescue",
+                    "correct": true
+                },
+                {
+                    "answer": "arise",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which pattern needs the update method to work?",
+            "answers" : [
+                {
+                    "answer": "Adapter",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Builder",
+                    "correct": false
+                },
+                {
+                    "answer": "Observer",
+                    "correct": true
+                },
+                {
+                    "answer": "Composite",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which of the following isn't Structura Design patterns?",
+            "answers" : [
+                {
+                    "answer": "Facade",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Adapter",
+                    "correct": false
+                },
+                {
+                    "answer": "Proxy",
+                    "correct": false
+                },
+                {
+                    "answer": "Prototype",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "Which patterns are all about Class and Object composition?",
+            "answers" : [
+                {
+                    "answer": "Structural Design Patterns",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Behavioral Design Patterns",
+                    "correct": false
+                },
+                {
+                    "answer": "Creational Design Patterns",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Do Desing Patterns allow developer to communicate using well-knon names for software interactions?",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": true
+                }, 
+                {
+                    "answer": "False",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The Factory Method...",
+            "answers" : [
+                {
+                    "answer": "avoid instances of several derived classes.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "separates instances of several derived classes.",
+                    "correct": false
+                },
+                {
+                    "answer": "initialize instances of several derived classes.3",
+                    "correct": false
+                },
+                {
+                    "answer": "creates instances of several derived classes.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "The following pattern defines a new operation to a class without change.",
+            "answers" : [
+                {
+                    "answer": "Visitor",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Observer",
+                    "correct": false
+                },
+                {
+                    "answer": "Null Object",
+                    "correct": false
+                },
+                {
+                    "answer": "State",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The iterator design pattern...",
+            "answers" : [
+                {
+                    "answer": "Alter an object's behaviour when its state changes.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Defer the exact steps of an algorithm to a subclass.",
+                    "correct": false
+                },
+                {
+                    "answer": "Capture and restore an object's internal state.",
+                    "correct": false
+                },
+                {
+                    "answer": "Sequentially access the elements of a collection.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "Which of the following is not a creational design pattern.",
+            "answers" : [
+                {
+                    "answer": "Builder",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Protoype",
+                    "correct": false
+                },
+                {
+                    "answer": "Singleton",
+                    "correct": false
+                },
+                {
+                    "answer": "Command",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "What is the advantage of using code block as observers?",
+            "answers" : [
+                {
+                    "answer": "Tight the code.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Simplify",
+                    "correct": true
+                },
+                {
+                    "answer": "Make the code accesible.",
+                    "correct": false
+                },
+                {
+                    "answer": "Composite the code.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which are the variations of the observer pattern?",
+            "answers" : [
+                {
+                    "answer": "The pull/push methods.",
+                    "correct": true
+                }, 
+                {
+                    "answer": "The execute/unexecute methods.",
+                    "correct": false
+                },
+                {
+                    "answer": "The analyse/dismiss methods.",
+                    "correct": false
+                },
+                {
+                    "answer": "The recover/fade methods.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This 3 elements compose the composite pattern",
+            "answers" : [
+                {
+                    "answer": "component,composite,builder",
+                    "correct": false
+                }, 
+                {
+                    "answer": "composite,builder,leaf",
+                    "correct": false
+                },
+                {
+                    "answer": "component,builder,leaf",
+                    "correct": false
+                },
+                {
+                    "answer": "component,composite,leaf",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "Our main goal with the composite patterns is to make the leaf and composite objects indistinguishable?",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": true
+                }, 
+                {
+                    "answer": "False",
+                    "correct": false
+                }               
+            ]
+        },
+        {
+            "question" : "Where is the best place to put the parent-reference handling code in the composite pattern?",
+            "answers" : [
+                {
+                    "answer": "In the component class.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "In the composite class.",
+                    "correct": false
+                },
+                {
+                    "answer": "In the leaf class.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The Iterator pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation?",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": true
+                }, 
+                {
+                    "answer": "False",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which iterator is a separate object from the aggregate?",
+            "answers" : [
+                {
+                    "answer": "Internal",
+                    "correct": false
+                }, 
+                {
+                    "answer": "External",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "Which method takes one parameter code block and calls that code block for each element in the array? ",
+            "answers" : [
+                {
+                    "answer": "each",
+                    "correct": true
+                }, 
+                {
+                    "answer": "return",
+                    "correct": false
+                },
+                {
+                    "answer": "all",
+                    "correct": false
+                },
+                {
+                    "answer": "any",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Which pattern captures and restores an object's internal state?",
+            "answers" : [
+                {
+                    "answer": "Null Object",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Strategy",
+                    "correct": false
+                },
+                {
+                    "answer": "Interpreter",
+                    "correct": false
+                },
+                {
+                    "answer": "Mementor",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "The bridge separates an object's interface from its implementation?",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": true
+                }, 
+                {
+                    "answer": "False",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "It is used for passing a request between a chain of objects?",
+            "answers" : [
+                {
+                    "answer": "Chain of requests",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Chain of commands",
+                    "correct": false
+                },
+                {
+                    "answer": "Chain of retraction",
+                    "correct": false
+                },
+                {
+                    "answer": "Chain of responsability",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "It alters an object's behavior when its state changes",
+            "answers" : [
+                {
+                    "answer": "State",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Alter",
+                    "correct": false
+                },
+                {
+                    "answer": "Bahavior",
+                    "correct": false
+                },
+                {
+                    "answer": "Change",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The object pool pattern...",
+            "answers" : [
+                {
+                    "answer": "avoid expensive acquisition and release of resources by combining objects that are no longer in use.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "avoid expensive acquisition and release of resources by recycling objects that are no longer in use.",
+                    "correct": true
+                },
+                {
+                    "answer": "avoid expensive acquisition and release of resources by recducing objects that are no longer in use.",
+                    "correct": false
+                },
+                {
+                    "answer": "avoid expensive acquisition and release of resources by gathering objects that are no longer in use.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The decorator pattern reduces responsabilities to objects dynamically?",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": false
+                }, 
+                {
+                    "answer": "False",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "Which of the following is false?",
+            "answers" : [
+                {
+                    "answer": "The bridge pattern separates an object's interface drom its implementation.",
+                    "correct": false
+                }, 
+                {
+                    "answer": "The adapter pattern matches interfaces of different classes.",
+                    "correct": false
+                },
+                {
+                    "answer": "The command pattern encapsulates a command request as an object.",
+                    "correct": false
+                },
+                {
+                    "answer": "The memento pattern alters an object's behavior when its stage changes.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "The Abstract Factory...",
+            "answers" : [
+                {
+                    "answer": "Creates an instance of several families of classes.",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Avoid expensive acquisition and release of resources by recycling objects that are no longer in use.",
+                    "correct": false
+                },
+                {
+                    "answer": "Creates an instance of several derived classes.",
+                    "correct": false
+                },
+                {
+                    "answer": "Restricts accessor/mutator access.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The Flyweight pattern...",
+            "answers" : [
+                {
+                    "answer": "is a fine-grained instance used for efficient sharing.",
+                    "correct": true
+                }, 
+                {
+                    "answer": "is a false-grained instance used for efficient sharing.",
+                    "correct": false
+                },
+                {
+                    "answer": "is a fine-grained instance used for not efficient sharing.",
+                    "correct": false
+                },
+                {
+                    "answer": "is a fine-grained instance not used for efficient sharing.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern separates the construction of a complex object from its representation",
+            "answers" : [
+                {
+                    "answer": "Builder",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Abstract Factory",
+                    "correct": false
+                },
+                {
+                    "answer": "Template Method",
+                    "correct": false
+                },
+                {
+                    "answer": "Adapter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The interpreter pattern is a specialized version of which other design pattern",
+            "answers" : [
+                {
+                    "answer": "Observer",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Adapter",
+                    "correct": false
+                },
+                {
+                    "answer": "Composite",
+                    "correct": true
+                },
+                {
+                    "answer": "Iterator",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "With this design pattern a problem can be easier to solve by giving the user a convenient syntax",
+            "answers" : [
+                {
+                    "answer": "Memento",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Visitor",
+                    "correct": false
+                },
+                {
+                    "answer": "Flyweight",
+                    "correct": false
+                },
+                {
+                    "answer": "DSL",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "What does DSL stand for?",
+            "answers" : [
+                {
+                    "answer": "Decoupled Services Language",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Domain-Specific Language",
+                    "correct": true
+                },
+                {
+                    "answer": "Deep Science Language",
+                    "correct": false
+                },
+                {
+                    "answer": "Dark-Script Language",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This pattern defines a representation for its grammar along with an evaluator...",
+            "answers" : [
+                {
+                    "answer": "Interpreter",
+                    "correct": true
+                }, 
+                {
+                    "answer": "DSL",
+                    "correct": false
+                },
+                {
+                    "answer": "Factory",
+                    "correct": false
+                },
+                {
+                    "answer": "Builder",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern consists of writing computer programs that write or manipulate other programs",
+            "answers" : [
+                {
+                    "answer": "Macro-programming",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Proxy",
+                    "correct": false
+                },
+                {
+                    "answer": "Meta-programming",
+                    "correct": true
+                },
+                {
+                    "answer": "Composite",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern ensures a class has only one instance and provides a global point of access to it",
+            "answers" : [
+                {
+                    "answer": "Observer",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Adapter",
+                    "correct": false
+                },
+                {
+                    "answer": "Template method",
+                    "correct": false
+                },
+                {
+                    "answer": "Singleton",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "The factory method design pattern is basically a special case of the template method pattern",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": true
+                }, 
+                {
+                    "answer": "False",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "Design pattern that provides an interface for creating families of related or dependent objects  without specifying their concrete classes",
+            "answers" : [
+                {
+                    "answer": "Memento",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Abstract factory",
+                    "correct": true
+                },
+                {
+                    "answer": "Flyweight",
+                    "correct": false
+                },
+                {
+                    "answer": "Strategy",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "What would be the best suited refactoring for an array that has a convention based on element positioning?",
+            "answers" : [
+                {
+                    "answer": "Move field",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Replace array with an object",
+                    "correct": true
+                },
+                {
+                    "answer": "Replace array with a hash",
+                    "correct": false
+                },
+                {
+                    "answer": "Move method",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern converts the interface of a class into another interface client expects",
+            "answers" : [
+                {
+                    "answer": "Meta-programming",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Builder",
+                    "correct": false
+                },
+                {
+                    "answer": "Command",
+                    "correct": false
+                },
+                {
+                    "answer": "Adapter",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern provides a surrogate or placeholder for another object to control access to it",
+            "answers" : [
+                {
+                    "answer": "Iterator",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Proxy",
+                    "correct": true
+                },
+                {
+                    "answer": "Memento",
+                    "correct": false
+                },
+                {
+                    "answer": "Observer",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This pattern is used by ActiveRecord in order to offer a standardized interface that allows communication with DBMS's",
+            "answers" : [
+                {
+                    "answer": "Adapter",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Template Method",
+                    "correct": false
+                },
+                {
+                    "answer": "Iterator",
+                    "correct": false
+                },
+                {
+                    "answer": "Proxy",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "What iterator would you use when merging 2 sorted arrays",
+            "answers" : [
+                {
+                    "answer": "Internal",
+                    "correct": false
+                }, 
+                {
+                    "answer": "External",
+                    "correct": true
+                },
+                {
+                    "answer": "Abstract",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The ObjectPool is a structural design pattern",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": false
+                }, 
+                {
+                    "answer": "False",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "In this design pattern a single class represents an entire subsystem",
+            "answers" : [
+                {
+                    "answer": "Proxy",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Composite",
+                    "correct": false
+                },
+                {
+                    "answer": "Facade",
+                    "correct": true
+                },
+                {
+                    "answer": "Template Method.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The command pattern is a behavioural design pattern",
+            "answers" : [
+                {
+                    "answer": "True",
+                    "correct": true
+                }, 
+                {
+                    "answer": "False",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern defines a simplified communication between classes",
+            "answers" : [
+                {
+                    "answer": "Abstract factory",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Flyweight",
+                    "correct": false
+                },
+                {
+                    "answer": "Mediator",
+                    "correct": true
+                },
+                {
+                    "answer": "Strategy",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "The Builder design pattern is a ...",
+            "answers" : [
+                {
+                    "answer": "Behavioral design pattern",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Creational design pattern",
+                    "correct": true
+                },
+                {
+                    "answer": "Structural design pattern",
+                    "correct": false
+                },
+                {
+                    "answer": "Respuesta.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern creates a fully initialized instance to be copied or cloned",
+            "answers" : [
+                {
+                    "answer": "Facade",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Adapter",
+                    "correct": false
+                },
+                {
+                    "answer": "Proxy",
+                    "correct": false
+                },
+                {
+                    "answer": "Prototype",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern adds responsibilities to objects dynamically",
+            "answers" : [
+                {
+                    "answer": "Decorator",
+                    "correct": true
+                }, 
+                {
+                    "answer": "Iterator",
+                    "correct": false
+                },
+                {
+                    "answer": "Interpreter",
+                    "correct": false
+                },
+                {
+                    "answer": "Template Method",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern is designed to act as a default value of an object",
+            "answers" : [
+                {
+                    "answer": "Factory method",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Composite",
+                    "correct": false
+                },
+                {
+                    "answer": "Null Object",
+                    "correct": true
+                },
+                {
+                    "answer": "Observer",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question" : "This design pattern encapsulates an algorithm inside a class",
+            "answers" : [
+                {
+                    "answer": "Flyweight",
+                    "correct": false
+                }, 
+                {
+                    "answer": "Strategy",
+                    "correct": true
+                },
+                {
+                    "answer": "Visitor",
+                    "correct": false
+                },
+                {
+                    "answer": "Decorator",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
